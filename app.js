@@ -50,6 +50,7 @@ do {
 } while (iterator <= 100);
 
 // Exercise 4
+console.log("EXERCISE 4:\n==========\n");
 let value = Math.round(Math.random() * 500); // creates a random number between 0 and 500
 let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
 for (let i = 0; i <= n; i++) {
@@ -62,6 +63,24 @@ for (let i = 0; i <= n; i++) {
   } else if (i === n) {
     console.log("Did not find value");
     //   If the value is not found after going through all numbers, it prints "Did not find value".
-    //   else if were at the end of the loop and didnt find anything
+    //   else if when the value is at the end of the loop and the loop didnt find it
   }
 }
+
+console.log("EXERCISE 5:\n==========\n");
+let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let start = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
+let end = Math.round(Math.random() * (1000 - 100) + 100); // creates a random number between 100 and 1000
+
+for (let i = start; i < end; i++) {
+  if (i % fizzDivisor === 0 && i % buzzDivisor === 0) {
+    console.log("FIZZBUZZ", i);
+  } else if (i % 3 === 0) {
+    console.log("FIZZ", i);
+  } else if (i % 5 === 0) {
+    console.log("BUZZ", i);
+  }
+}
+console.log("fizzDivisor", fizzDivisor);
+console.log("buzzDivisor", buzzDivisor);
