@@ -9,6 +9,7 @@ for (let i = 1; i <= 100; i++) {
     console.log(i);
   }
 }
+
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
@@ -19,8 +20,6 @@ for (let i = 1; i <= 100; i++) {
     console.log("FIZZ");
   } else if (i % 5 === 0) {
     console.log("BUZZ");
-  } else {
-    console.log(i);
   }
 }
 
@@ -38,11 +37,11 @@ while (i <= 100) {
 // DO WHILE of exercise 2
 do {
   if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FIZZBUZZ");
+    console.log("FIZZBUZZ", i);
   } else if (i % 3 === 0) {
-    console.log("FIZZ");
+    console.log("FIZZ", i);
   } else if (i % 5 === 0) {
-    console.log("BUZZ");
+    console.log("BUZZ", i);
   } else {
     console.log(i);
   }
