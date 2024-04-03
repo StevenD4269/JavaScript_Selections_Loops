@@ -5,9 +5,8 @@ console.log("EXERCISE 1:\n==========\n");
 // the let sets the lower limit to 1 and upper limit to 100, and increments +1 every loop. Dividing by 2 means there will be no remainder
 for (let i = 1; i <= 100; i++) {
   if (i % 2 !== 0) {
+    // i has to be odd. so === would be even.  !== would make it odd
     console.log(i);
-  } else {
-    continue;
   }
 }
 // Exercise 2 Section
